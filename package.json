@@ -1,0 +1,30 @@
+{
+  "name": "tp-formatter",
+  "version": "0.0.1",
+  "description": "npm publish demostration",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tungpt247/tp-formatter.git"
+  },
+  "keywords": [
+    "demo",
+    "formmatter"
+  ],
+  "author": "tungphan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tungpt247/tp-formatter/issues"
+  },
+  "homepage": "https://github.com/tungpt247/tp-formatter#readme",
+  "engines": {
+    "node": ">=5.10"
+  },
+  "devDependencies": {
+    "chai": "3.5.0",
+    "mocha": "2.4.5"
+  }
+}
