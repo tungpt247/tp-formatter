@@ -1,6 +1,8 @@
-export default class Convert {
+class Convert {
 
   percent(deg) {
     return deg * 10
   }
 }
+
+module.exports = Convert

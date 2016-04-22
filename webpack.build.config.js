@@ -6,20 +6,22 @@ const outputFile = appName + '.js'
 const PATH = {
   source: path.join(__dirname, 'src'),
   dist: path.join(__dirname, 'dist'),
-  entry: path.join(__dirname, 'src', appName + '.js')
+  entry: path.join(__dirname, 'src', 'index.js')
 }
 
 const config = {
   entry: PATH.entry,
-  devtool: 'source-map',
+  devtool: 'eval-source-map',
   output: {
     path: PATH.dist,
-    filename: outputFile
+    filename: outputFile,
+    library: [appName],
+    libraryTarget: 'umd'
   },
   module: {
     loaders: [{
       test: /(\.jsx|\.js)$/,
-      loader: 'babel-loader',
+      loader: 'babel',
       exclude: /(node_modules|bower_components)/,
       query: {
         presets: ['react', 'es2015', 'stage-1']
