@@ -22,7 +22,7 @@ const config = {
     loaders: [{
       test: /(\.jsx|\.js)$/,
       loader: 'babel',
-      exclude: /(node_modules|bower_components)/,
+      exclude: /node_modules/,
       query: {
         presets: ['react', 'es2015', 'stage-1']
       }
@@ -33,7 +33,7 @@ const config = {
     }]
   },
   resolve: {
-    root: path.resolve('./src'),
+    root: [path.resolve(__dirname, 'src'), path.resolve(__dirname, 'node_modules')],
     extensions: ['', '.js', '.jsx']
   },
   plugins: [
