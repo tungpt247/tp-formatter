@@ -2,7 +2,7 @@
   "name": "tp-formatter",
   "version": "0.0.2",
   "description": "npm publish demostration",
-  "main": "distribution/formatter.js",
+  "main": "dist/formatter.js",
   "scripts": {
     "build": "webpack --config webpack.build.config.js",
     "prepublish": "npm run build",
